@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: verdana;
+}
+
+@font-face {
+  font-family: 'VoidFont';
+  src: url('fonts/VCR_OSD_MONO.otf') format('opentype');
+}
+
+
+a {
+  color: #ff0909;
+}
+
+
+a:visited {
+  color: #ff0909;
+}
+
+
+a:hover {
+  color: #ff5e5e;
+}
+
+
+a:active {
+  color: #ff4700;
+}
+
+.red {
+	color: #ff0626;
+}
+.green {
+	color: #07ff06;
+}
+.blue {
+	color: #0622ff;
+}
+.orange {
+	color: #ff9206;
+}
