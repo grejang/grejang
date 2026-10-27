@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminSPACE - Home Page</title>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="1cf43030-5306-452c-92d3-85a630458f95"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="favicon.ico">
+    <style>
+      body {
+        background-image: url("backgrounds/skybase.png"); 
+        background-size: cover;
+        background-position: center; 
+        background-attachment: fixed; 
+        color: white;
+        font-family: "VoidFont", monospace;
+      }
+      .text {
+        background: rgba(20,20,20,0.8);
+        border: 2px solid #d60000;
+        border-radius: 6px;
+        padding: 5px 10px;
+        width: 700px;
+        margin-bottom: 10px;
+      }
+      
+    </style>
+  </head>
+  <body>
+  
+  <div class="text">
+  
+	<script>
+		const isMobile = window.innerWidth <= 768;
+		document.head.insertAdjacentHTML('beforeend', `<style> ${isMobile ? ` .text { width: 330px; } .notification { width: 310px; } #logo { width: 320px; } ` : `.text {  } `}</style>`);
+	</script>
+     
+    <img id="logo" src="images/adminspacelogo.png" alt="Adminspace Logo Full">
+	
+	<div id="notification">
+		<p>Il Profilo per U+0000 è stato creato, condividi questo <i class="copy-text" onClick="copyText(this)">LINK</i> con chi vuoi assegnare l'AdminCode</p>
+	</div>
+	
+	<h1>AdminSPACE</h1>
+	
+	<p>Su questo sito potete accedere a Consoles, WorkZones, Documenti e molto altro ancora</p>
+	
+
+	
+	<div id="model-container"></div>
+
+    <p>- Il team di Grejang</p>
+    
+    <p> - Adam</p>
+	
+  </div>
+  </body>
+</html>
