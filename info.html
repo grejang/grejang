@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREJANG</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="favicon.ico">
+    <style>
+      body {
+        background-image: url("skybase0.png"); 
+        background-size: cover;
+        background-position: center; 
+        background-attachment: fixed; 
+        color: white;
+        font-family: "VoidFont", monospace;
+      }
+      .text {
+        background: rgba(20,20,20,0.8);
+        border: 2px solid #626161;
+        border-radius: 6px;
+        padding: 5px 10px;
+        width: 700px;
+        margin-bottom: 10px;
+      }
+      
+    </style>
+  </head>
+  <body>
+  
+  <div class="text">
+  
+	<script>
+		const isMobile = window.innerWidth <= 768;
+		document.head.insertAdjacentHTML('beforeend', `<style> ${isMobile ? ` .text { width: 330px; } #logo { width: 320px; } ` : `.text {  } `}</style>`);
+	</script>
+
+  <p style="color: #168300">/ext/skybox/info //////////</p>
+     
+  <a href="index.html">\_ Torna alla Home</a>
+
+  <p><img id="logo" src="images/grejanglogofullname.png" alt="Grejang Logo Full"></p>
+	
+	<h1>INFORMAZIONI</h1>
+
+	<p>Questo sito è controllato da Grejang, Skybase4, Settore 1.</p>
+
+    <p>Il leader di Grejang è <a href="makeradam.html">makeradam</a></p>
+
+  <p>------------------------------------------</p>
+
+    <p>- Il team di Grejang</p>
+	
+  </div>
+  </body>
+</html>
