@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.ico">
     <style>
       body {
-        background-image: url("skybase0.png"); 
+        background-image: url("tubian.png"); 
         background-size: cover;
         background-position: center; 
         background-attachment: fixed; 
@@ -24,10 +24,24 @@
         width: 700px;
         margin-bottom: 10px;
       }
+
+    .info {
+        position: fixed;
+        display: none; /* Nascosto di default */
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 14px;
+        pointer-events: none; /* Evita che il box interferisca con il mouse */
+        z-index: 9999;
+    }
       
     </style>
   </head>
   <body>
+
+    <div class="info"></div>
   
   <div class="text">
   
@@ -48,41 +62,100 @@
 
     <p>--------------Programmazione--------------</p>
     <div class="scripting">
-        <img id="1a" src="images/js.png" style="width: 64px;">
-        <img id="1a" src="images/java.png" style="width: 64px;">
-        <img id="1a" src="images/cs.png" style="width: 64px;">
-        <img id="1a" src="images/html.png" style="width: 64px;">
+        <img id="1a" class="h" src="images/js.png" style="width: 64px;">
+        <img id="1b" class="h" src="images/java.png" style="width: 64px;">
+        <img id="1c" class="h" src="images/cs.png" style="width: 64px;">
+        <img id="1d" class="h" src="images/html.png" style="width: 64px;">
+    </div>
+    <p>Sviluppo di Giochi</p>
+    <div class="scripting2">
+        <img id="1e" class="h" src="images/unity.png" style="width: 64px;">
+        <img id="1f" class="h" src="images/gd.png" style="width: 64px;">
     </div>
 
     <p>-----------------Socials------------------</p>
     <div class="socials">
-        <a href="https://youtube.com/@adam-e2u7l"><img id="1a" src="images/yt.png" style="width: 64px;"></a>
-        <a href="https://www.tiktok.com/@adam_e2u7l?_r=1&_t=ZN-94nUslofYCk"><img id="1a" src="images/tt.png" style="width: 64px;"></a>
-        <a href="https://www.instagram.com/adam50921739?srtk=djM0Ynhma2M1MGk0"><img id="1a" src="images/ig.png" style="width: 64px;"></a>
+        <a href="https://youtube.com/@adam-e2u7l"><img id="2a" class="h" src="images/yt.png" style="width: 64px;"></a>
+        <a href="https://www.tiktok.com/@adam_e2u7l?_r=1&_t=ZN-94nUslofYCk"><img id="2b" class="h" src="images/tt.png" style="width: 64px;"></a>
+        <a href="https://www.instagram.com/adam50921739?srtk=djM0Ynhma2M1MGk0"><img id="2c" class="h" src="images/ig.png" style="width: 64px;"></a>
+        <a href="https://steamcommunity.com/id/Makeradam-void/"><img id="2d" class="h" src="images/steam.png" style="width: 64px;"></a>
     </div>
 
     <p>------------------Altro-------------------</p>
     <p>Giochi preferiti:</p>
     <div class="games">
-        <img id="1a" src="images/tf2.png" style="width: 64px;">
-        <img id="1a" src="images/geom.svg" style="width: 64px;">
-        <img id="1a" src="images/dr.png" style="width: 64px;">
-        <img id="1a" src="images/te2.png" style="width: 64px;">
+        <img id="3a" class="h" src="images/tf2.png" style="width: 64px;">
+        <img id="3b" class="h" src="images/geom.svg" style="width: 64px;">
+        <img id="3c" class="h" src="images/dr.png" style="width: 64px;">
+        <img id="3d" class="h" src="images/gm.png" style="width: 64px;">
+        <img id="3e" class="h" src="images/te2.png" style="width: 64px;">
     </div>
 
     <p>Sistemi Operativi Preferiti:</p>
 
-    <img id="1a" src="images/lm.png" style="width: 64px;">
-    <img id="1a" src="images/win7.png" style="width: 64px;">
+    <img id="4a" class="h" src="images/lm.png" style="width: 64px;">
+    <img id="4b" class="h" src="images/win7.png" style="width: 64px;">
+
+    <p>ABSOLUTE CINEMA:</p>
+
+    <img id="5a" class="h" src="images/mi.png" style="width: 64px;">
+    <img id="5b" class="h" src="images/tb.png" style="width: 64px;">
 
     <p>Mi piace disegnare e sto provando a comporre muscia</p>
 
     <p>Non sono nato inglese ma ormai è diventata una delle mie lingue principali</p>
+
+    <p>Uso AI come gemini solo per risolvere bug di programmazione gravi o se non ho idea di come realizzare qualcosa, negli altri casi il mio codice è semplicemente spaghetti</p>
+
+    <p style="color: #e5f505">Nota: Aggiungere i link a alcune immagini</p>
 
     <p>------------------------------------------</p>
 
     <p>- Il team di Grejang</p>
 	
   </div>
+  <script>
+  const hoverElements = document.querySelectorAll('.h');
+  const infoBox = document.querySelector('.info');
+
+  const textMap = {
+    '1a': 'Javascript',
+    '1b': 'Java',
+    '1c': 'C# (C Sharp)',
+    '1d': 'HTML',
+    '1e': 'Unity Engine',
+    '1f': 'Godot Engine',
+    '2a': 'Youtube: @adam-e287l',
+    '2b': 'Tiktok: @makeradam',
+    '2c': 'Instagram: @makeradam____',
+    '2d': 'Profilo Steam',
+    '3a': 'Team Fortress 2',
+    '3b': 'Geometry Dash',
+    '3c': 'Deltarune',
+    '3d': 'Garry\'s Mod',
+    '3e': 'The Escapists 2',
+    '4a': 'Linux Mint',
+    '4b': 'Windows 7',
+    '5a': 'Mi Alliance Invasion',
+    '5b': 'The Bottom Of The Void ARG'
+  };
+
+  hoverElements.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      const id = el.id;
+      infoBox.textContent = textMap[id] || 'Informazioni non disponibili';
+      infoBox.style.display = 'block';
+    });
+
+    el.addEventListener('mousemove', (e) => {
+      infoBox.style.left = (e.clientX + 15) + 'px';
+      infoBox.style.top = (e.clientY + 15) + 'px';
+    });
+
+    el.addEventListener('mouseleave', () => {
+      infoBox.style.display = 'none';
+    });
+  });
+</script>
   </body>
 </html>
